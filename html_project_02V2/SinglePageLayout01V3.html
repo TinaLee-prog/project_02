@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SinglePageLayout</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap">
+    <script src="https://kit.fontawesome.com/7fa0c268b0.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="cssSPL02/normalize.css">
+    <link rel="stylesheet" href="cssSPL02/SinglePageLayout01V3.css"> 
+</head>
+<body>
+    <header class="header">
+        <p class="site-title-sub">Web designer's portfolio</p>
+        <h1 class="site-title">HI, MY NAME IS TINA</h1>
+        <p class="site-description">Check out some of my works.</p>
+        <div class="buttons">
+            <a class="button" href="#about">LEARN MORE</a>
+            <a class="button button-showy" href="#contact">SEND MESSAGE</a>
+        </div>
+    </header>
+    <section class="about" id="about">
+        <h2 class="heading">ABOUT ME</h2>
+        <p class="about-text"> HI ! 初次見面，我因熱愛網頁設計與分享生活點滴所以創立了這個網站</p>
+        <p class="about-text">這網站主要是為了展示我的作品集，次而分享我的生活興趣</p>
+        <p class="about-text">希望透過這個方式讓您能進一步了解我的作品</p>
+    </section>
+    <section class="work">
+        <h2 class="heading">WORKS</h2>
+        <div class="works-wrapper">
+            <div class="work-box one">
+                <img class="work-image" src="imgSPL02/bg01_montain.png" alt="專案ㄧ山丘圖片">
+                <div class="work-description">
+                    <div class="work-description-inner">
+                        <p class="work-text">
+                            案例ㄧ<br>
+                            簡單說明<br>
+                            使用工具:<br>
+                            <a href="#" class="button button-ghost">READ MORE</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="work-box two">
+                <img class="work-image" src="imgSPL02/bg02_flower.png" alt="專案二花與光圖片">
+                <div class="work-description">
+                    <div class="work-description-inner">
+                        <p class="work-text">
+                            案例二<br>
+                            簡單說明<br>
+                            使用工具：<br>
+                            <a href="#" class="button button-ghost">READ MORE</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="work-box three">
+                <img class="work-image" src="imgSPL02/bg03_sunlight.png" alt="專案三陽光圖片">
+                <div class="work-description">
+                    <div class="work-description-inner">
+                        <p class="work-text">
+                            案例三<br>
+                            簡單說明<br>
+                            使用工具：<br>
+                            <a href="#" class="button button-ghost">READ MORE</a>
+                        </p>
+                </div>
+                </div>
+            </div>
+            <div class="work-box four">
+                <img class="work-image" src="imgSPL02/bg04_forest.png" alt="專案四森林圖片">
+                <div class="work-description">
+                    <div class="work-description-inner"> 
+                        <p class="work-text">
+                            案例四<br>
+                            簡單說明<br>
+                            使用工具：<br>
+                            <a href="#" class="button button-ghost">READ MORE</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <h2 class="heading"> MY SKILLS</h2>
+        <div class="skills-wrapper">
+            <div class="skill-box">
+                <i class="skill-icon fa-solid fa-lightbulb fa-xl"></i>
+                <div class="skill-title">IDEA</div>
+                <p class="skill-text">
+                    喜歡思考事情<br>
+                    喜歡嘗試和思考新事物
+                </p>
+            </div>
+            <div class="skill-box">
+                <i class="skill-icon fa-solid fa-paintbrush fa-xl"></i>
+                <div class="skill-title">DESIGN</div>
+                <p class="skill-text">
+                    不只會設計美麗外觀<br>
+                    亦會考慮到容易使用，容易傳達資訊
+                </p>
+            </div>
+            <div class="skill-box">
+                <i class="skill-icon fa-solid fa-code fa-xl"></i>
+                <div class="skill-title">CODING</div>
+                <p class="skill-text">
+                    會寫 HTML / CSS 程式碼<br>
+                    給予元素正確標籤並考慮到未來修改的彈性與強度
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">CONTACT</h2>
+        <form class="contact-form">    
+            <input type="text" name="name" placeholder="NAME" required>
+            <textarea name="message" placeholder="MESSAGE" required></textarea>
+            <input type="submit" value="SEND">
+        </form>    
+    </section>
+    <footer class="footer">
+        <i class="fa-regular fa-copyright"></i>
+        sample.site
+    </footer>
+    <script src="lib/placeholder.min.js"></script>
+</body>
+</html>

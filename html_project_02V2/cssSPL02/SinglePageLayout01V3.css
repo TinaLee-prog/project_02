@@ -1,0 +1,381 @@
+@charset "UTF-8";
+
+/*header*/
+html{
+    font-size: 62.5%;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+/*新增讀取網頁字體的設定*/
+body{
+    background: #151515 url(../imgSPL02/casey-horner-free.jpg) no-repeat fixed left bottom;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: Raleway, "Hiragino Kaku Gothic ProN" Meiryo, sans-serif;
+}
+@media (max-width: 768px){
+    body{
+        font-size: 1.3rem;
+    }
+}
+/*header*/
+.header{
+    padding:170px 30px 80px;
+}
+@media (max-width: 768px){
+    .header{ padding-top: 60px;
+    }
+}
+.site-title-sub{
+    margin: 0 0 30px;
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+}
+@media (max-width: 768px){
+    .site-title-sub{
+        font-size: 1.7rem;
+    }
+}
+.site-title-sub::before,
+.site-title-sub::after {
+    content: "";
+    display: inline-block;
+    width: 140px;
+    height: 2px;
+    margin: 0 30px;
+    background-color: #fff;
+    vertical-align: middle;
+}
+@media (max-width: 768px){
+    .site-title-sub::before,
+    .site-title-sub::after {
+        display:block;
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+.site-title{
+    margin: 50px 0 40px;
+    font-size: 7.6rem;
+}
+@media (max-width: 768px){ 
+    .site-title{
+        margin-top: 35px;
+        font-size: 5rem;
+    }
+}
+.site-description{
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 1.6rem;
+}
+.button{
+    display: inline-block;
+    width: 200px;
+    padding:20px;
+    border-radius: 4px;
+    background-color: #afa58d;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+.button-showy{
+    background-color: #f1b400;
+}
+.button:hover{
+    opacity: 0.9;
+}
+@media (max-width: 768px){
+    .button:hover{
+        opacity: 1;
+    }
+}
+.buttons .button{
+    margin: 10px;
+} 
+/*section 1 about me*/
+.about{
+    padding: 80px;
+    background-color: #fff;
+    color: #333;
+}
+.heading{
+    position:relative; /*雙底線調整*/
+    display:inline-block;
+    margin: 30px 0 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 4rem;
+}
+@media (max-width: 768px){
+    .heading{
+        font-size: 2.5rem;
+    }
+}
+.heading::before,
+.heading::after{
+    content:" ";
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #999;
+}
+.heading::before{
+    bottom: 5px;
+} /*雙底線的位置調整*/
+.about-text{
+    margin:30px 0;
+    line-height: 2.5;
+}
+@media (max-width: 768px){
+    .about-text{
+        line-height: 1.8rem;
+    }
+}
+/*section 2 works*/
+.works{
+    background-color: #383634;
+    padding: 80px 0;
+}
+.works-wrapper{
+    display: table;
+    width: 100%;
+    margin-top: 60px;
+    table-layout:fixed;
+}
+.work-box{
+    position:relative;
+    display:table-cell;
+}
+@media (max-width: 768px){
+    .work-wrapper,
+    .work-box{
+        display:block;
+    }
+}
+.work-box::after{
+    content: " ";
+    position:absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: no-repeat;
+    background-size: 100% 100%;
+    opacity:0.4;
+    transform: scaleY(-1);
+}
+.work-box.one::after{
+    background-image: url(../imgSPL02/bg01_montain.png)
+}
+.work-box.two::after{
+    background-image: url(../imgSPL02/bg02_flower.png)
+}
+.work-box.three::after{
+    background-image: url(../imgSPL02/bg03_sunlight.png)
+}
+.work-box.four::after{
+    background-image: url(../imgSPL02/bg04_forest.png)
+}
+@media (max-width: 768px){
+    .work-box::after{
+        top:0;
+        height:100%;
+        background:cover;
+    }
+}
+/*上下交錯的ＣＳＳ語法*/
+.work-box:nth-child(even) .work-image{
+    margin: 60% 0 0;
+}
+.work-box:nth-child(even) .work-description, 
+.work-box:nth-child(even)::after{
+    top: 0;
+} 
+.work-image{
+    display:block;
+    width: 100%;
+    margin: 0 0 60%; 
+}
+@media (max-width: 768px){
+    .work-image{
+        display:none;
+    }
+}
+.work-description{ 
+    position:absolute;
+    top: 50%;
+    left:0;
+    z-index: 1; 
+    width: 100%;
+    height:50%;
+}
+@media (max-width: 768px){
+    .work-description{
+        position:relative;
+    }
+}
+.work-text{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+.work-text .button{
+    width: 60%;
+    margin-top:10px;
+    padding: 4px;
+}
+.button-ghost{
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+/*section 3 my skills*/
+.skills{
+    padding: 80px 0;
+    background-color: #fff;
+    color: #333;
+}
+.skills-wrapper{
+    display: table;
+    width: 80%;
+    margin: 50px auto 0;
+    table-layout: fixed;
+}
+.skill-box{
+    display: table-cell;
+}
+@media (max-width: 768px){
+    .skill-box{
+        margin:40px auto;
+    }
+}
+@media (max-width: 768px){
+    .skill-wrapper,
+    .skill-box{
+        display:block;
+    }
+}
+.skill-icon{
+    width:150px;
+    height:150px;
+    margin-bottom: 30px;
+    border: 4px solid;
+    border-radius: 50%;
+    color: #f1b400;
+    font-size: 8rem;
+    line-height: 142px;
+}
+@media (max-width: 768px){
+    .skill-icon{
+        width:100px;
+        height:100px;
+        font-size:5rem;
+        line-height:92px;
+    }
+}
+.skill-title{
+    margin: 0 20px 20px;
+    font-size: 2rem;
+}
+.skill-text{
+    margin: 0 20px;
+    line-height: 2;
+}
+@media (max-width: 768px){
+    .skill-text{
+        margin:0;
+    }
+}
+.work-description-inner{
+    display:table;
+    width:100%;
+    height:100%;
+    padding: 20px;
+}
+.work-text{
+    display:table-cell;
+    vertical-align:middle;
+}
+/*section 4 contact*/
+.contact{
+    padding: 80px 0 150px;
+}
+@media (max-width: 768px){
+    .contact{
+        padding-bottom: 80px;
+    }
+}
+.contact-form{
+    width: 50%;
+    margin:50px auto 0;
+}
+@media (max-width: 768px){
+    .contact-form{
+        width:80%;
+    }
+}
+.contact-form input[type=text],
+.contact-form textarea{
+    display: block;
+    width: 100%;
+    margin-bottom:10px;
+    padding:15px;
+    outline: none; 
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.05);
+    color: #fff;
+}
+.contact-form textarea{
+    height: 150px;
+}
+.contact-form input[type=submit]{
+    display: block;
+    width: 200px;
+    margin: 40px auto 0;
+    padding: 15px;
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
+}
+.contact-form input[type=submit]:hover{
+    background-color: rgba(255,255,255,0.05);
+}
+.contact-form input[type=text]:focus, 
+.contact-form textarea:focus{
+    box-shadow: 0 0 8px rgba(255,255,255,0.5) inset;
+}
+
+.contact-form ::-webkit-input-placeholder{ /*for Chrome and Safari*/
+    color: rgba(255,255,255,0.6);
+    opacity: 1;
+}
+.contact-form :-ms-input-placeholder{ /*for IE*/
+    color: rgba(255,255,255,0.6);
+    opacity: 1;
+}
+.contact-form ::-moz-placeholder{ /*for FireFox*/
+    color: rgba(255,255,255,0.6);
+    opacity: 1;
+}
+/*footer*/
+.footer{
+    padding: 12px;
+    font-size: 1.3rem;
+}
+
+@media (max-width:768px){
+    body{
+        background-image: none;
+    }
+}
