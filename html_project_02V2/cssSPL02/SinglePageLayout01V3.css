@@ -172,10 +172,10 @@ body{
     transform: scaleY(-1);
 }
 .work-box.one::after{
-    background-image: url(../imgSPL02/bg01_montain.png)
+    background-image: url(../imgSPL02/coding02\ 2024-08-06\ 上午11.30.27.png)
 }
 .work-box.two::after{
-    background-image: url(../imgSPL02/bg02_flower.png)
+    background-image: url(../imgSPL02/ffood01-brooke-lark-oaz0raysASk-unsplash.jpg)
 }
 .work-box.three::after{
     background-image: url(../imgSPL02/bg03_sunlight.png)
