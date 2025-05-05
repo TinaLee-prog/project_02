@@ -1,2 +1,3 @@
-# project_02
-This project showcases a website I developed using a Single Page Layout design format.
+# PersonalProfileWebpage
+Welcome to my personal profile webpage
+This is a space where I highlight several of my featured project demos.
