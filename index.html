@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Personal Profile Webpage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+    <script
+      src="https://kit.fontawesome.com/7fa0c268b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="cssSPL02/normalize.css" />
+    <link rel="stylesheet" href="cssSPL02/styleV3.css" />
+    <style></style>
+  </head>
+  <body>
+    <div>
+      <header class="header" id="#top">
+        <p class="site-title-sub">Web designer's portfolio</p>
+        <h1 class="site-title">HI, MY NAME IS TINA</h1>
+        <div class="content nav-item">
+          <div class="site-description"><a href="#works">MY WORKS</a></div>
+          <div class="site-description"><a href="#skills">MY SKILLS</a></div>
+          <div class="site-description"><a href="#about">ABOUT ME</a></div>
+        </div>
+        <div>
+          <a href="https://github.com/TinaLee-prog/" class="gitHubLink "
+            ><i class="fa-brands fa-github fa-2xl"></i
+          ></a>
+          <a href="mailto:wt.tinalee@gmail.com" class="emailLink "
+            ><i class="fa-solid fa-envelope fa-2xl"></i
+          ></a>
+        </div>
+      </header>
+
+      <section class="work2" id="works2">
+        <h2 class="heading">My Works</h2>
+        <div>
+          <div class="work-box">
+            <div class="work-setting work-item1">
+              <div class="work-heading">珠寶購物網站</div>
+              <button class="show-modal" data-modal="modal1">Read More</button>
+              <a
+                href="http://vaccessories.infinityfreeapp.com/project01v5/index.php?i=1
+              "
+                target="_blank"
+                ><button class="work-btn">Link</button>
+              </a>
+            </div>
+            <div class="work-setting work-item2">
+              <div class="work-heading">鞋子購物網站首頁</div>
+              <button class="show-modal" data-modal="modal2">Read More</button>
+              <a href="https://tinalee-prog.github.io/MyShoes/ " target="_blank"
+                ><button class="work-btn">Link</button></a
+              >
+            </div>
+            <div class="work-setting work-item3">
+              <div class="work-heading">Jp 旅遊網站首頁</div>
+              <button class="show-modal" data-modal="modal3">Read More</button>
+              <a
+                href="https://tinalee-prog.github.io/TravelJapan/bootstrap-Jp/index.html"
+                target="_blank"
+                ><button class="work-btn">Link</button></a
+              >
+            </div>
+            <div class="work-setting work-item4">
+              <div class="work-heading">扔骰子遊戲</div>
+              <button class="show-modal" data-modal="modal4">Read More</button>
+              <a
+                href="https://tinalee-prog.github.io/Dice-Game/"
+                target="_blank"
+              >
+                <button class="work-btn">Link</button></a
+              >
+            </div>
+          </div>
+          <!-- 三個不同的 modal -->
+          <div class="modal hidden" id="modal1">
+            <button class="close-modal">&times;</button>
+            <h1>V.Accessories購物網站</h1>
+            <div class="">簡&emsp;&emsp;介：首頁與商品列表頁的購物網站</div>
+            <br />
+            <div class="">使用技術：HTML、CSS、JavaScript、PHP、Bootstrap</div>
+            <br />
+            <div class="">專案亮點：</div>
+            <ul>
+              <li>右側開啟式 Navbar 設計</li>
+              <li>Bootstrap Carousel 輪播展示主打商品</li>
+              <li>商品卡片 hover 動畫效果</li>
+              <li>PHP 模組化網頁結構</li>
+              <li>響應式設計 RWD</li>
+            </ul>
+          </div>
+
+          <div class="modal hidden" id="modal2">
+            <button class="close-modal">&times;</button>
+            <h1>MyShoes 運動鞋購物網站首頁</h1>
+            <div class="">簡&emsp;&emsp;介：運動鞋品牌風格網站首頁</div>
+            <br />
+            <div class="">使用技術：HTML、CSS、JavaScript、Bootstrap</div>
+            <br />
+            <div class="">專案亮點：</div>
+            <ul>
+              <li>滑鼠滾輪下滑視差 parallax 效果</li>
+              <li>整體視覺具品牌一致性</li>
+              <li>響應式設計RWD</li>
+              <li>提供表單填寫區</li>
+            </ul>
+          </div>
+
+          <div class="modal hidden" id="modal3">
+            <button class="close-modal">&times;</button>
+            <h1>TravelJapan 旅遊網站首頁</h1>
+            <div class="">簡&emsp;&emsp;介：日本旅遊資訊展示網站首頁</div>
+            <br />
+            <div class="">使用技術：HTML、CSS、Bootstrap</div>
+            <br />
+            <div class="">專案亮點：</div>
+            <ul>
+              <li>強調視覺吸引力與資訊呈現</li>
+              <li>Bootstrap Carousel 和 Card 元件使用</li>
+            </ul>
+          </div>
+
+          <div class="modal hidden" id="modal4">
+            <button class="close-modal">&times;</button>
+            <h1>Roll the Dice Game 擲骰子遊戲</h1>
+            <div class="">簡&emsp;&emsp;介：雙人擲骰子競賽遊戲</div>
+            <br />
+            <div class="">使用技術：JavaScript、DOM 操作</div>
+            <br />
+            <div class="">專案亮點：</div>
+            <ul>
+              <li>事件監聽與動態內容更新</li>
+              <li>switch player 切換邏輯</li>
+              <li>模組化初始化設計</li>
+              <li>條件控制</li>
+            </ul>
+          </div>
+          <div class="overlay hidden"></div>
+        </div>
+      </section>
+      <div style="text-align: center; margin-top: 10rem;">♦︎♦︎♦︎♦︎♦︎♦︎♦︎♦︎♦︎♦︎♦︎</div>
+      <section class="skills" id="skills">
+        <h2 class="heading">MY SKILLS</h2>
+        <div class="skills-wrapper">
+          <div class="skill-box">
+            <i class="skill-icon fa-solid fa-paintbrush fa-xl"></i>
+            <div class="skill-title">DESIGN</div>
+            <p class="skill-text">
+              理解網頁設計不僅追求美觀，更重視使用者體驗與資訊傳達清晰。<br /><br>
+              以珠寶購物網站為例：<br>
+              <ol style="text-align: start; line-height: 2;">
+                <li>簡約的白色背景，引導顧客目光集中於產品。</li>
+                <li>清晰的左側產品分類，協助顧客快速定位所需商品。</li>
+                <li>透過麵包屑導航，讓顧客能一目瞭然產品的分類歸屬，提升操作便利性。</li>
+              </ol>
+            </p>
+          </div>
+          <div class="skill-box">
+            <i class="skill-icon fa-solid fa-code fa-xl"></i>
+            <div class="skill-title">CODING</div>
+            <p class="skill-text ">
+              <ol style="text-align: start; line-height: 2;">
+                <li>熟悉 HTML / CSS & SCSS
+                  JavaScript，具備網頁切版與互動功能實作能力。</li>
+                <li>使用 Bootstrap、Animate.css、Google Fonts
+                  強化排版與視覺動效。</li>
+                <li>能使用 @media 與 Bootstrap Grid
+                  製作響應式版型，適應各種裝置。</li>
+                <li>熟悉 Git 基本操作，了解版本控制與多人協作概念。</li>
+                <li>運用 photoshop 基礎功能修圖/除去背景 產生gif動圖。</li>
+              </ol>   
+            </p>
+          </div>
+          <div class="skill-box">
+            <i class="skill-icon fa-solid fa-lightbulb fa-xl"></i>
+            <div class="skill-title">IDEA</div>
+            <p class="skill-text">
+              從使用者角度思考問題，樂於探索新工具與技術，
+              具備主動學習與分析解決問題的能力。<br />
+              <ol style="text-align: start; line-height: 2;">
+                <li>持續精進 React 等框架應用。</li>
+                <li>積極探索 UI/UX 設計趨勢</li>
+                <li>未來計畫學習運用 Figma 等工具進行視覺化呈現。</li>
+              </ol>
+            </p>
+          </div>          
+        </div>
+      </section>
+<div style="text-align: center; margin-top: 10rem;">♦︎♦︎♦︎♦︎♦︎♦︎♦︎♦︎♦︎♦︎♦︎</div>
+      <section class="about dotLine" id="about">
+        <div class="dotLine"></div>
+        <h2 class="heading">ABOUT ME</h2>
+        <p class="about-text">
+          您好！因為對自我成長的渴望與對網頁設計的熱愛，我踏入了前端開發的世界，持續學習並實作多個網頁作品。
+        </p>
+        <p class="about-text">希望透過這個網頁，讓您更認識我的能力與作品思維，也期待有機會能進一步與您交流，成為貴團隊的一份子。</p>
+      </section>
+
+      <footer class="footer">
+        <p>Tina's Personal Profile Website &copy; all rights reserved</p>
+        <a href="#top" style="text-decoration: none; color: inherit"
+          >BACK TO TOP</a
+        >
+      </footer>
+    </div>
+    <script src="lib/placeholder.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
