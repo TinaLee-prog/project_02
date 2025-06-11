@@ -7,15 +7,6 @@
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DRGX901V7T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DRGX901V7T');
-</script>
     <title>Personal Profile Webpage</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="https://fonts.gstatic.com" />
@@ -29,18 +20,28 @@
     ></script>
     <link rel="stylesheet" href="cssSPL02/normalize.css" />
     <link rel="stylesheet" href="cssSPL02/styleV3.css" />
-    
+    <style></style>
   </head>
-  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRGX901V7T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DRGX901V7T');
+  </script>
   <body>
     <div>
       <header class="header" id="#top">
-        <p class="site-title-sub">Web designer's portfolio</p>
-        <h1 class="site-title">HI, MY NAME IS TINA</h1>
+        <div class="lang-switch">
+          <button onclick="location.href='index-en.html'">English</button>
+        </div>
+        <h1 class="site-title">嗨, 我是 Tina</h1>
+        <p class="site-title-sub">歡迎來到我的網頁設計師作品集頁面</p>
         <div class="content nav-item">
-          <div class="site-description"><a href="#works">MY WORKS</a></div>
-          <div class="site-description"><a href="#skills">MY SKILLS</a></div>
-          <div class="site-description"><a href="#about">ABOUT ME</a></div>
+          <div class="site-description"><a href="#works">我的作品集</a></div>
+          <div class="site-description"><a href="#skills">技能</a></div>
+          <div class="site-description"><a href="#about">關於我</a></div>
         </div>
         <div>
           <a href="https://github.com/TinaLee-prog/" class="gitHubLink "
@@ -53,47 +54,58 @@
       </header>
 
       <section class="work2" id="works2">
-        <h2 class="heading">My Works</h2>
+        <h2 class="heading">我的作品集</h2>
         <div>
           <div class="work-box">
             <div class="work-setting work-item1">
               <div class="work-heading">珠寶購物網站</div>
-              <button class="show-modal" data-modal="modal1">Read More</button>
+              <button class="show-modal" data-modal="modal1">閱讀更多</button>
               <a
                 href="http://vaccessories.infinityfreeapp.com/project01v5/index.php?i=1
               "
                 target="_blank"
-                ><button class="work-btn">Link</button>
+                ><button class="work-btn">前往網站</button>
               </a>
             </div>
-            <div class="work-setting work-item2">
+            <!-- <div class="work-setting work-item2">
               <div class="work-heading">鞋子購物網站首頁</div>
-              <button class="show-modal" data-modal="modal2">Read More</button>
+              <button class="show-modal" data-modal="modal2">閱讀更多</button>
               <a href="https://tinalee-prog.github.io/MyShoes/ " target="_blank"
-                ><button class="work-btn">Link</button></a
+                ><button class="work-btn">前往網站</button></a
               >
-            </div>
+            </div> -->
             <div class="work-setting work-item3">
-              <div class="work-heading">Jp 旅遊網站首頁</div>
-              <button class="show-modal" data-modal="modal3">Read More</button>
+              <div class="work-heading">農村美食小吃網</div>
+              <button class="show-modal" data-modal="modal3">閱讀更多</button>
               <a
-                href="https://tinalee-prog.github.io/TravelJapan/bootstrap-Jp/index.html"
+                href="https://tinalee-prog.github.io/cuisine/"
                 target="_blank"
-                ><button class="work-btn">Link</button></a
+                ><button class="work-btn">前往網站</button></a
               >
             </div>
             <div class="work-setting work-item4">
               <div class="work-heading">扔骰子遊戲</div>
-              <button class="show-modal" data-modal="modal4">Read More</button>
+              <button class="show-modal" data-modal="modal4">閱讀更多</button>
               <a
                 href="https://tinalee-prog.github.io/Dice-Game/"
                 target="_blank"
               >
-                <button class="work-btn">Link</button></a
+                <button class="work-btn">前往網站</button></a
+              >
+            </div>
+
+            <div class="work-setting work-item5">
+              <div class="work-heading">披薩菜單</div>
+              <button class="show-modal" data-modal="modal5">閱讀更多</button>
+              <a
+                href="https://tinalee-prog.github.io/PizzaMenu/"
+                target="_blank"
+              >
+                <button class="work-btn">前往網站</button></a
               >
             </div>
           </div>
-          <!-- 三個不同的 modal -->
+          <!--  modal section -->
           <div class="modal hidden" id="modal1">
             <button class="close-modal">&times;</button>
             <h1>V.Accessories購物網站</h1>
@@ -102,7 +114,7 @@
             <div class="">使用技術：HTML、CSS、JavaScript、PHP、Bootstrap</div>
             <br />
             <div class="">專案亮點：</div>
-            <ul>
+            <ul class="modal-text">
               <li>右側開啟式 Navbar 設計</li>
               <li>Bootstrap Carousel 輪播展示主打商品</li>
               <li>商品卡片 hover 動畫效果</li>
@@ -111,49 +123,66 @@
             </ul>
           </div>
 
-          <div class="modal hidden" id="modal2">
+          <!-- <div class="modal hidden" id="modal2">
             <button class="close-modal">&times;</button>
             <h1>MyShoes 運動鞋購物網站首頁</h1>
-            <div class="">簡&emsp;&emsp;介：運動鞋品牌風格網站首頁</div>
+            <div>簡&emsp;&emsp;介：運動鞋品牌風格網站首頁</div>
             <br />
-            <div class="">使用技術：HTML、CSS、JavaScript、Bootstrap</div>
+            <div >使用技術：HTML、CSS、JavaScript、Bootstrap</div>
             <br />
-            <div class="">專案亮點：</div>
-            <ul>
+            <div >專案亮點：</div>
+            <ul class="modal-text">
               <li>滑鼠滾輪下滑視差 parallax 效果</li>
               <li>整體視覺具品牌一致性</li>
               <li>響應式設計RWD</li>
               <li>提供表單填寫區</li>
             </ul>
-          </div>
+          </div> -->
 
           <div class="modal hidden" id="modal3">
             <button class="close-modal">&times;</button>
-            <h1>TravelJapan 旅遊網站首頁</h1>
-            <div class="">簡&emsp;&emsp;介：日本旅遊資訊展示網站首頁</div>
+            <h1>農村美食小吃網</h1>
+            <div>簡&emsp;&emsp;介：查詢台灣農村地區美食小吃的網頁平台</div>
             <br />
-            <div class="">使用技術：HTML、CSS、Bootstrap</div>
+            <div >使用技術：HTML、CSS、JavaScript、API 串接、Google Map 連結</div>
             <br />
-            <div class="">專案亮點：</div>
-            <ul>
-              <li>強調視覺吸引力與資訊呈現</li>
-              <li>Bootstrap Carousel 和 Card 元件使用</li>
+            <div >專案亮點：</div>
+            <ul class="modal-text">
+              <li>API 串接：串接政府開放資料 API，自動取得小吃資料，提高資料的即時性與準確度。</li>
+              <li>整合 Google Map：一鍵導向 Google 地圖，使用者能迅速查找店家位置，提升便利性與 UX。</li>
+              <li>全 CSS 手刻版型: 展現純 CSS 切版能力，運用 Grid Layout 與 Flexbox 版面規劃。搭配響應式設計，使其在手機也可觀看</li>
             </ul>
           </div>
 
           <div class="modal hidden" id="modal4">
             <button class="close-modal">&times;</button>
             <h1>Roll the Dice Game 擲骰子遊戲</h1>
-            <div class="">簡&emsp;&emsp;介：雙人擲骰子競賽遊戲</div>
+            <div >簡&emsp;&emsp;介：雙人擲骰子競賽遊戲</div>
             <br />
-            <div class="">使用技術：JavaScript、DOM 操作</div>
+            <div>使用技術：JavaScript、DOM 操作</div>
             <br />
-            <div class="">專案亮點：</div>
-            <ul>
+            <div >專案亮點：</div>
+            <ul class="modal-text">
               <li>事件監聽與動態內容更新</li>
               <li>switch player 切換邏輯</li>
               <li>模組化初始化設計</li>
               <li>條件控制</li>
+            </ul>
+          </div>
+
+          <div class="modal hidden" id="modal5">
+            <button class="close-modal">&times;</button>
+            <h1>披薩菜單</h1>
+            <div >簡&emsp;&emsp;介：這是一個使用 React 框架打造的披薩菜單單頁應用程式，主要展示餐廳菜單和營業時間資訊。</div>
+            <br />
+            <div>使用技術：React、HTML、CSS、JavaScript</div>
+            <br />
+            <div >專案亮點：</div>
+            <ul class="modal-text">
+              <li>React 基礎架構:使用 Create React App 建立專案</li>
+              <li>主題切換功能: 實現 light/dark 模式切換並用 localStorage 保存用戶主題偏好 </li>
+              <li>動態內容顯示: 根據當前時間顯示營業狀態 (16:00-21:00 營業)</li>
+              <li>資料驅動 UI: 從 pizzaData 陣列動態渲染菜單項目</li>
             </ul>
           </div>
           <div class="overlay hidden"></div>
@@ -161,12 +190,13 @@
       </section>
       <div style="text-align: center; margin-top: 10rem;">♦︎♦︎♦︎♦︎♦︎♦︎♦︎♦︎♦︎♦︎♦︎</div>
       <section class="skills" id="skills">
-        <h2 class="heading">MY SKILLS</h2>
+        <h2 class="heading">技能</h2>
         <div class="skills-wrapper">
           <div class="skill-box">
             <i class="skill-icon fa-solid fa-paintbrush fa-xl"></i>
             <div class="skill-title">DESIGN</div>
             <p class="skill-text">
+              <span>能透過 Figma 匯出網頁設計稿，並理解其結構。</span><br>
               理解網頁設計不僅追求美觀，更重視使用者體驗與資訊傳達清晰。<br /><br>
               以珠寶購物網站為例：<br>
               <ol style="text-align: start; line-height: 2;">
@@ -180,15 +210,13 @@
             <i class="skill-icon fa-solid fa-code fa-xl"></i>
             <div class="skill-title">CODING</div>
             <p class="skill-text ">
-              <ol style="text-align: start; line-height: 2;">
-                <li>熟悉 HTML / CSS & SCSS
-                  JavaScript，具備網頁切版與互動功能實作能力。</li>
-                <li>使用 Bootstrap、Animate.css、Google Fonts
-                  強化排版與視覺動效。</li>
-                <li>能使用 @media 與 Bootstrap Grid
-                  製作響應式版型，適應各種裝置。</li>
-                <li>熟悉 Git 基本操作，了解版本控制與多人協作概念。</li>
-                <li>運用 photoshop 基礎功能修圖/除去背景 產生gif動圖。</li>
+              <ol style="text-align: start; line-height: 2;">             
+                <li>熟悉 HTML5、CSS3 / SCSS，具備良好的切版能力與互動功能開發經驗。</li>
+                <li>精通 CSS Flexbox 與 Grid，能配合 @media 製作響應式網頁。</li>
+                <li>運用 JavaScript，具備串接 API 的能力，提升網頁資料的即時性與互動性。</li>
+                <li>善用 Bootstrap 與 Google Fonts 增強排版與視覺表現。</li>
+                <li>具備 Git 操作經驗，理解版本控制與團隊協作流程。</li>
+                <li>能進行簡易 Photoshop 圖像處理，支援網頁素材與動畫製作。</li>
               </ol>   
             </p>
           </div>
@@ -201,7 +229,6 @@
               <ol style="text-align: start; line-height: 2;">
                 <li>持續精進 React 等框架應用。</li>
                 <li>積極探索 UI/UX 設計趨勢</li>
-                <li>未來計畫學習運用 Figma 等工具進行視覺化呈現。</li>
               </ol>
             </p>
           </div>          
@@ -210,11 +237,13 @@
 <div style="text-align: center; margin-top: 10rem;">♦︎♦︎♦︎♦︎♦︎♦︎♦︎♦︎♦︎♦︎♦︎</div>
       <section class="about dotLine" id="about">
         <div class="dotLine"></div>
-        <h2 class="heading">ABOUT ME</h2>
+        <h2 class="heading">關於我</h2>
         <p class="about-text">
-          您好！因為對自我成長的渴望與對網頁設計的熱愛，我踏入了前端開發的世界，持續學習並實作多個網頁作品。
-        </p>
-        <p class="about-text">希望透過這個網頁，讓您更認識我的能力與作品思維，也期待有機會能進一步與您交流，成為貴團隊的一份子。</p>
+        您好！我是一位從業務助理轉職前端開發的學習者，熱衷於將想法轉化為實際且有影響力的網頁作品。<br><br>
+過去擔任業務助理的經驗，讓我深知「良好溝通與細心協作」的重要性，也培養了對「使用者需求的敏銳洞察力」。這些經驗讓我更加相信，一個有意義的網頁，不只追求美觀與功能，更在於能真正解決問題、服務大眾。<br><br>
+前端開發賦予我實現這份願景的機會。透過程式碼，我能將設計理念化為視覺，創造出能被廣泛看見、並為人們帶來便利的數位產品。這種「透過我的參與，讓作品被世界看見」的成就感，正是我對工作與人生的期許。<br><br>
+為此，我全心投入前端學習，並實作了多個網頁作品。希望透過這個網站，讓您更了解我的能力與作品思維。我期待有機會能與您交流，共同打造更多精彩的網頁，並成為貴團隊的一份子。
+    </p>
       </section>
 
       <footer class="footer">
@@ -226,5 +255,6 @@
     </div>
     <script src="lib/placeholder.min.js"></script>
     <script src="script.js"></script>
+    
   </body>
 </html>
